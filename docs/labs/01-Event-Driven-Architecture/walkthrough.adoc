@@ -801,7 +801,7 @@ For the following commands remember to be sure to switch to your _working_ proje
 oc create secret generic amq-config --from-literal=AMQP_HOST=amq-broker-amqp-0-svc
 ----
 
-. Open the OpenShift Developer Console link:{openshift-host}/topology/ns/{namespace}[Topology View, window="_blank"], and link the recently created secret values with as environment variables for the `events` Deployment.
+. Open the link:{openshift-host}/k8s/ns/{namespace}/deployments/events[Events Deployment, window="_blank"], and link the recently created secret values as environment variables.
 +
 image::images/secret-deployment-add.png[Environment Variables, role="integr8ly-img-responsive"]
 
